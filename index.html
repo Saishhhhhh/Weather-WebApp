@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <div class="city-date">
+                <div id="cityName" class="city"></div>
+                <div id="date" class="date"></div>
+            </div>
+            <form>
+                <input id="city-input" type="text" placeholder="Which City's Weather You Wish To Know">
+            </form>
+            <div id="waqt" class="time"></div>
+        </div>
+        <div class="mid-section">
+            <div class="left-section">
+                <div id="temp" class="temp"><span class="temp-deg"><sup></sup></span>
+                </div>
+                <div id="weather" class="weather">
+                    
+                </div>
+                <div id="description" class="description">
+                    
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="extra-details">
+                    <div class="detail" id="min-temp-container">
+                        <div id="min-temp-text">Min Temp</div>
+                        <div class="min-temp value"><span class="temp-symbol"><sup></sup></span></div>
+                        <div id="minTemp-logo" class="logo"><img src="Assets/minTemp.png" alt="Alternate text"></div>
+                    </div>
+                    <div class="detail" id="max-temp-container">
+                        <div id="max-temp-text">Max Temp</div>
+                        <div id="max-temp"class="value"><span class="temp-symbol"><sup></sup></span></div>
+                        <div id="maxTemp-logo" class="logo"><img src="Assets/maxTemp.png" alt="Alternate text"></div>
+                    </div>
+                    <div class="detail" id="wind-speed-container">
+                        <div id="wind-speed-text">Wind Speed</div>
+                        <div id="wind-speed" class="value"><span id="kmph"></span></div>
+                        <div class="logo"><img id="wind-logo" src="Assets/wind.png" alt="Alternate text"></div>
+                    </div>
+                    <div class="detail" id="humidity-container">
+                        <div id="humidity-text">Humidity</div>
+                        <div id= "humidity" class="value"><span id="percent"></span></div>
+                        <div class="logo"><img id="humidity-logo" src="Assets/humidity.png" alt="Alternate text"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
